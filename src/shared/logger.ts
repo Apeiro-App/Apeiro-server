@@ -54,7 +54,7 @@ const errorLogger = createLogger({
         'logs',
         'winston',
         'errors',
-        'Gym-%DATE%-success.log',
+        'Gym-%DATE%-error.log',
       ),
       datePattern: 'YYYY-MM-DD-HH',
       zippedArchive: true,

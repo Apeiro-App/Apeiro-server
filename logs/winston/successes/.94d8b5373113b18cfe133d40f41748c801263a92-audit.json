@@ -14,6 +14,11 @@
             "date": 1695124845650,
             "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-18-success.log",
             "hash": "0e82146dd6a6a66940e994da6dd2a8b8ce2b851241e408989de63bbc0bace45b"
+        },
+        {
+            "date": 1695132317433,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-20-success.log",
+            "hash": "6afc5c0ab2d4ffb5d13900066606eb0c3f9402197b2e098d6e865a93aadc167e"
         }
     ],
     "hashType": "sha256"
