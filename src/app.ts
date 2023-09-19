@@ -8,8 +8,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Successful');
-});
+// app.get('/', async (req: Request, res: Response) => {
+//   res.send('Successful');
+// });
 
 export default app;
