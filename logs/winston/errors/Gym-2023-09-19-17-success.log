@@ -1,0 +1,63 @@
+{
+  message: 'Failed to connect database connect ECONNREFUSED 127.0.0.1:27017',
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      '127.0.0.1:27017' => ServerDescription {
+        address: '127.0.0.1:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 13852564,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+            at connectionFailureError (C:\projects\gym-management-server\node_modules\mongodb\src\cmap\connect.ts:493:14)
+            at Socket.<anonymous> (C:\projects\gym-management-server\node_modules\mongodb\src\cmap\connect.ts:394:16)
+            at Object.onceWrapper (node:events:628:26)
+            at Socket.emit (node:events:513:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: Error: connect ECONNREFUSED 127.0.0.1:27017
+              at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+            errno: -4078,
+            code: 'ECONNREFUSED',
+            syscall: 'connect',
+            address: '127.0.0.1',
+            port: 27017
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (C:\\projects\\gym-management-server\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\projects\\gym-management-server\\node_modules\\mongoose\\lib\\connection.js:780:11)',
+  label: 'Gym Management',
+  timestamp: '2023-09-19T11:22:57.050Z'
+}
