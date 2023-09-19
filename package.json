@@ -5,8 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint:fix": "eslint --fix",
-    "prettier:fix": "prettier --write",
+    "lint:fix": "eslint . --fix",
+    "prettier:fix": "prettier --write.",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "yarn lint:check && yarn prettier:check",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,6 +35,8 @@
     "eslint": "^8.49.0",
     "express": "^4.18.2",
     "mongoose": "^7.5.2",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
   }
 }

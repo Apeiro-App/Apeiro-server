@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\.94d8b5373113b18cfe133d40f41748c801263a92-audit.json",
+    "files": [
+        {
+            "date": 1695122546988,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-17-success.log",
+            "hash": "083ecbd34b0ad0830d21429e41bef319d42f3e1691df2aef19634113ddebf85e"
+        }
+    ],
+    "hashType": "sha256"
+}
