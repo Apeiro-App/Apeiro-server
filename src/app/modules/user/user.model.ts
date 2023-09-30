@@ -1,4 +1,5 @@
 import mongoose, { Schema, model } from 'mongoose';
+import { IUser, UserModel } from './user.interface';
 
 const userSchema = new Schema<IUser>({
   name: {
@@ -29,24 +30,22 @@ const userSchema = new Schema<IUser>({
     enum: ['admin', 'client', 'coach'],
     default: 'client',
   },
-  categories: [
-    {
-      type: String,
-    },
-  ],
+  category: {
+    type: String,
+    enum: ['in-person', 'online', 'hybrid'],
+  },
   phoneNumber: {
     type: String,
   },
   birthDate: {
-    type: Date,
+    type: String,
   },
   gender: {
     type: String,
     enum: ['male', 'female', 'other'],
   },
   owner: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    type: String,
   },
   // You can add more properties as needed
 });
