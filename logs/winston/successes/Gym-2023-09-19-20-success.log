@@ -34,3 +34,15 @@
   label: 'Gym Management',
   timestamp: '2023-09-19T14:07:49.882Z'
 }
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-09-19T14:08:21.141Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-09-19T14:08:21.153Z'
+}

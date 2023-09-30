@@ -1,15 +1,15 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
-    },
-    "auditLog": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\.3cfd111b8599df9a3f3b910b8907fcd15247fa3f-audit.json",
-    "files": [
-        {
-            "date": 1695132469397,
-            "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-09-19-20-error.log",
-            "hash": "019fc62a6e5e50cc3aac7da2a2d4a7be68637959403ebda5f5ea605878e255c0"
-        }
-    ],
-    "hashType": "sha256"
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\.3cfd111b8599df9a3f3b910b8907fcd15247fa3f-audit.json",
+  "files": [
+    {
+      "date": 1695132469397,
+      "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-09-19-20-error.log",
+      "hash": "019fc62a6e5e50cc3aac7da2a2d4a7be68637959403ebda5f5ea605878e255c0"
+    }
+  ],
+  "hashType": "sha256"
 }
