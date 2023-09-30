@@ -20,6 +20,8 @@ const userSchema = new Schema<IUser>({
   password: {
     type: String,
     required: true,
+    default: '123456',
+    select: 0,
   },
   isPasswordChange: {
     type: Boolean,
