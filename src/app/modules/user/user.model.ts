@@ -1,4 +1,4 @@
-import mongoose, { Schema, model } from 'mongoose';
+import { Schema, model } from 'mongoose';
 import { IUser, UserModel } from './user.interface';
 
 const userSchema = new Schema<IUser>({
@@ -38,11 +38,12 @@ const userSchema = new Schema<IUser>({
   },
   status: {
     type: String,
-    enum: ['connected', 'online', 'pending'],
+    enum: ['connected', 'offline', 'pending'],
     required: true,
   },
   phoneNumber: {
     type: String,
+    required: true,
   },
   birthDate: {
     type: String,

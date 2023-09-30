@@ -1,29 +1,19 @@
-import config from '../../../config/index';
+import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { IUser } from './user.interface';
 import { User } from './user.model';
-import { generateUserIncrementalId } from './user.utils';
 
-//       -------------------------       NEED TO PROJECT ANALYSIS      -------------------------
-
-const createUserService = async (user: IUser): Promise<IUser | null> => {
-  // auto incremental id
-  const id = await generateUserIncrementalId();
-  user.id = id;
-
-  // default password
-  if (!user.password) {
-    user.password = config.default_user_password as string;
+const createUser = async (payload: IUser): Promise<IUser | null> => {
+  if (payload) {
+    const existUser = await User.findOne({ email: { $eq: payload.email } });
+    if (existUser) {
+      throw new ApiError(httpStatus.NOT_FOUND, 'User is already exist');
+    }
   }
-
-  const createdUser = await User.create(user);
-  // console.log('createdUser', createdUser)
-  if (!createdUser) {
-    throw new ApiError(400, 'User created failed');
-  }
-  return createdUser;
+  const result = await User.create(payload);
+  return result;
 };
 
 export const userService = {
-  createUserService,
+  createUser,
 };
