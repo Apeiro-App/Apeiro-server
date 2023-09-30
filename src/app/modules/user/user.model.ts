@@ -29,10 +29,17 @@ const userSchema = new Schema<IUser>({
     type: String,
     enum: ['admin', 'client', 'coach'],
     default: 'client',
+    required: true,
   },
   category: {
     type: String,
     enum: ['in-person', 'online', 'hybrid'],
+    required: true,
+  },
+  status: {
+    type: String,
+    enum: ['connected', 'online', 'pending'],
+    required: true,
   },
   phoneNumber: {
     type: String,
