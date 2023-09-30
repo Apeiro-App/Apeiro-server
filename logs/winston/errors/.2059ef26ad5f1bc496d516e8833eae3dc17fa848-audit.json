@@ -1,15 +1,15 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
-    },
-    "auditLog": "C:\\Users\\Rahat Hasan Dipto\\Desktop\\Apeiro-server\\logs\\winston\\errors\\.2059ef26ad5f1bc496d516e8833eae3dc17fa848-audit.json",
-    "files": [
-        {
-            "date": 1696093430633,
-            "name": "C:\\Users\\Rahat Hasan Dipto\\Desktop\\Apeiro-server\\logs\\winston\\errors\\Gym-2023-09-30-23-error.log",
-            "hash": "468fd51cd7d9aca02b396e5f65375b86b0efa48314830d0fbab1938ea65d5147"
-        }
-    ],
-    "hashType": "sha256"
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\Users\\Rahat Hasan Dipto\\Desktop\\Apeiro-server\\logs\\winston\\errors\\.2059ef26ad5f1bc496d516e8833eae3dc17fa848-audit.json",
+  "files": [
+    {
+      "date": 1696093430633,
+      "name": "C:\\Users\\Rahat Hasan Dipto\\Desktop\\Apeiro-server\\logs\\winston\\errors\\Gym-2023-09-30-23-error.log",
+      "hash": "468fd51cd7d9aca02b396e5f65375b86b0efa48314830d0fbab1938ea65d5147"
+    }
+  ],
+  "hashType": "sha256"
 }
