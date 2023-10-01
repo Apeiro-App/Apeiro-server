@@ -1,63 +1,31 @@
-import { Schema, model } from 'mongoose';
-import { IUser, UserModel } from './user.interface';
+// import { Schema, model } from 'mongoose';
+// import { IUser, UserModel } from './user.interface';
 
-const userSchema = new Schema<IUser>({
-  name: {
-    firstName: {
-      type: String,
-      required: true,
-    },
-    lastName: {
-      type: String,
-      required: true,
-    },
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    default: '123456',
-    select: 0,
-  },
-  isPasswordChange: {
-    type: Boolean,
-    default: false,
-  },
-  role: {
-    type: String,
-    enum: ['admin', 'client', 'coach'],
-    default: 'client',
-    required: true,
-  },
-  category: {
-    type: String,
-    enum: ['in-person', 'online', 'hybrid'],
-    required: true,
-  },
-  status: {
-    type: String,
-    enum: ['connected', 'offline', 'pending'],
-    required: true,
-  },
-  phoneNumber: {
-    type: String,
-    required: true,
-  },
-  birthDate: {
-    type: String,
-  },
-  gender: {
-    type: String,
-    enum: ['male', 'female', 'other'],
-  },
-  owner: {
-    type: String,
-  },
-  // You can add more properties as needed
-});
+// const userSchema = new Schema<IUser>({
 
-export const User = model<IUser, UserModel>('User', userSchema);
+//   email: {
+//     type: String,
+//     required: true,
+//     unique: true,
+//   },
+//   password: {
+//     type: String,
+//     required: true,
+//     select: 0,
+//   },
+//   isPasswordChange: {
+//     type: Boolean,
+//     default: false,
+//   },
+//   role: {
+//     type: String,
+//     enum: ['admin', 'client', 'coach'],
+//     required: true,
+//   },
+//   clientId: {
+
+//   }
+
+// });
+
+// export const User = model<IUser, UserModel>('User', userSchema);
