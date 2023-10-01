@@ -1,31 +1,30 @@
-// import { Schema, model } from 'mongoose';
-// import { IUser, UserModel } from './user.interface';
+import { Schema, model } from 'mongoose';
+import { IUser, UserModel } from './user.interface';
 
-// const userSchema = new Schema<IUser>({
+const userSchema = new Schema<IUser>({
+  email: {
+    type: String,
+    // required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+    select: 0,
+  },
+  isPasswordChange: {
+    type: Boolean,
+    default: false,
+  },
+  role: {
+    type: String,
+    required: true,
+  },
+  clientData: {
+    type: Schema.Types.ObjectId,
+    ref: 'Client',
+    required: true,
+  },
+});
 
-//   email: {
-//     type: String,
-//     required: true,
-//     unique: true,
-//   },
-//   password: {
-//     type: String,
-//     required: true,
-//     select: 0,
-//   },
-//   isPasswordChange: {
-//     type: Boolean,
-//     default: false,
-//   },
-//   role: {
-//     type: String,
-//     enum: ['admin', 'client', 'coach'],
-//     required: true,
-//   },
-//   clientId: {
-
-//   }
-
-// });
-
-// export const User = model<IUser, UserModel>('User', userSchema);
+export const User = model<IUser, UserModel>('User', userSchema);

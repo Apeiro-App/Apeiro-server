@@ -29,6 +29,16 @@
             "date": 1696100589169,
             "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-01-01-success.log",
             "hash": "1e56d51c0f1ce8d9b780ba476603eeca16038e3ee58b83aebaa4181f88682118"
+        },
+        {
+            "date": 1696183744835,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-00-success.log",
+            "hash": "28eb44b4a74ed8d0c7feba5ed507b8b6707eb96e10b0cc1cae996a12c26fbe7d"
+        },
+        {
+            "date": 1696187053590,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-01-success.log",
+            "hash": "e9eaa7013069c74f70b4bda49193cea8834b60f4934262b9144469244af175d1"
         }
     ],
     "hashType": "sha256"
