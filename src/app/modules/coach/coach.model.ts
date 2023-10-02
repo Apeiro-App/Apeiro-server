@@ -17,10 +17,6 @@ const coachSchema = new Schema<ICoachInfo>(
       type: String,
       required: true,
     },
-    coachId: {
-      type: String,
-      required: true,
-    },
     isVerified: {
       type: Boolean,
       required: true,

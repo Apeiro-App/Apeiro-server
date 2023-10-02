@@ -4,7 +4,7 @@ import catchAsync from '../../../shared/catchAsync';
 import { UserService } from './coach.services';
 import httpStatus from 'http-status';
 import { ICoachInfo } from './coach.interface';
-import sendResponse from '../../../shared/sendResponse';
+import { responseForData } from '../../../shared/sendResponse';
 
 const createCoach: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
@@ -12,7 +12,7 @@ const createCoach: RequestHandler = catchAsync(
 
     const result = await UserService.createStudent(student, userData);
 
-    sendResponse<ICoachInfo>(res, {
+    responseForData.sendResponseForCreate<ICoachInfo>(res, {
       statusCode: httpStatus.OK,
       success: true,
       message: 'user created successfully!',

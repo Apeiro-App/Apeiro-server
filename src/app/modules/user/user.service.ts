@@ -29,7 +29,7 @@ const createClient = async (
 
     const createClient = await Client.create([client], { session });
     if (!createClient.length) {
-      throw new ApiError(httpStatus.BAD_REQUEST, "Cann't create client");
+      throw new ApiError(httpStatus.BAD_REQUEST, "Can't create client");
     }
     console.log('createClient', createClient);
 
