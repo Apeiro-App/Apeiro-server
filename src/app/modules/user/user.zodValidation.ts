@@ -12,11 +12,11 @@ const clientZodSchema = z.object({
           required_error: 'Last Name is required',
         }),
       }),
-      // email: z
-      //   .string({
-      //     required_error: 'Email is required',
-      //   })
-      //   .email(),
+      email: z
+        .string({
+          required_error: 'Email is required',
+        })
+        .email(),
 
       // isPasswordChange: z.boolean(),
       // role: z.string({
@@ -40,6 +40,9 @@ const clientZodSchema = z.object({
       owner: z.string().optional(),
       clientData: z.string({
         required_error: 'Client ID is required',
+      }),
+      coachId: z.string({
+        required_error: 'Coach id is required',
       }),
     }),
   }),

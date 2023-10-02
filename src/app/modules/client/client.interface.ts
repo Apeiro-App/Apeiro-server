@@ -16,6 +16,7 @@ export type IClientInfo = {
   owner: string;
   gender: 'male' | 'female';
   email: string;
+  coachId: string;
 };
 
 export type ClientModel = Model<IClientInfo, Record<string, unknown>>;

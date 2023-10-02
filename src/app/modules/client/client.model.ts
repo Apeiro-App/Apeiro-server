@@ -51,6 +51,10 @@ export const clientSchema = new Schema<IClientInfo>(
     owner: {
       type: String,
     },
+    coachId: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,

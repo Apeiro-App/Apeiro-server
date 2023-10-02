@@ -34,7 +34,7 @@ const createClient = async (
     console.log('createClient', createClient);
 
     user.clientData = createClient[0]._id;
-    user.clientData = createClient[3].email;
+    // user.clientData = createClient[3].email;
 
     console.log('user', user);
 
