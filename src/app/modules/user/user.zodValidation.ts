@@ -12,11 +12,11 @@ const clientZodSchema = z.object({
           required_error: 'Last Name is required',
         }),
       }),
-      email: z
-        .string({
-          required_error: 'Email is required',
-        })
-        .email(),
+      // email: z
+      //   .string({
+      //     required_error: 'Email is required',
+      //   })
+      //   .email(),
 
       // isPasswordChange: z.boolean(),
       // role: z.string({

@@ -26,7 +26,7 @@ export const clientSchema = new Schema<IClientInfo>(
     },
     email: {
       type: String,
-      // required: true,
+      required: true,
       unique: true,
     },
     // role: {

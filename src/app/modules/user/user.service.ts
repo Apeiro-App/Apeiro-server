@@ -19,6 +19,7 @@ const createClient = async (
 
   // set role
   user.role = 'client';
+  client.role = 'client';
 
   // transection and rollback
   const session = await mongoose.startSession();
@@ -30,11 +31,15 @@ const createClient = async (
     if (!createClient.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "Cann't create client");
     }
+    console.log('createClient', createClient);
 
     user.clientData = createClient[0]._id;
+    user.clientData = createClient[3].email;
+
+    console.log('user', user);
 
     const newUser = await User.create([user], { session });
-
+    console.log('newUser', newUser);
     if (!newUser.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "can't create user");
     }
@@ -48,16 +53,12 @@ const createClient = async (
     throw error;
   }
 
-  // if (newUserAllData) {
-  //   newUserAllData = await User.findOne({ id: newUserAllData._id }).populate({
-  //     path: 'client',
-  //     populate: [
-  //       {
-  //         path: 'client',
-  //       },
-  //     ],
-  //   });
-  // }
+  if (newUserAllData) {
+    newUserAllData = await User.findOne({ _id: newUserAllData._id }).populate(
+      'clientData',
+    );
+  }
+  console.log('newUserAllData', newUserAllData);
   return newUserAllData;
 };
 

@@ -1,4 +1,5 @@
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
+import { IUser } from '../user/user.interface';
 
 export type Name = {
   clientFirstName: string;
@@ -7,7 +8,7 @@ export type Name = {
 
 export type IClientInfo = {
   name: Name;
-  // role: string;
+  role: string;
   status: 'online' | 'hybrid' | 'in-person';
   position: 'connected' | 'pending' | 'offline';
   phoneNumber: string;

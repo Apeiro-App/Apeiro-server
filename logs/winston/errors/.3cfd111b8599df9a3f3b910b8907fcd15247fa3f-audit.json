@@ -29,6 +29,26 @@
             "date": 1696187053598,
             "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-10-02-01-error.log",
             "hash": "58d5b749c1b6822ff09e72cd56a76b1466133e8be6a1b5ea2e501c5967af0c69"
+        },
+        {
+            "date": 1696227571304,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-10-02-12-error.log",
+            "hash": "62500583254909453205e22b5cd4ef04810bef4821db065a8ef7a80ca6e31646"
+        },
+        {
+            "date": 1696234270925,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-10-02-14-error.log",
+            "hash": "f382e639ef37ef06a6b49df3065ff0569b6cdcce4bf274f808fa85f7c6f8aba6"
+        },
+        {
+            "date": 1696240047914,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-10-02-15-error.log",
+            "hash": "6fa9b7d8730410394fbdd4538f85476cf24c4ae911f168feebbb61e6b5dd7418"
+        },
+        {
+            "date": 1696241148921,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\errors\\Gym-2023-10-02-16-error.log",
+            "hash": "1b76b37caab211ec6c556716e751761a39bfdc59a672477df957869b89947c72"
         }
     ],
     "hashType": "sha256"

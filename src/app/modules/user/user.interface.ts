@@ -2,7 +2,7 @@ import { Model, Types } from 'mongoose';
 import { IClientInfo } from '../client/client.interface';
 
 export type IUser = {
-  email: string;
+  // email: string;
   password: string;
   isPasswordChange: boolean;
   role: string;
