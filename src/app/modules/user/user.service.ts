@@ -34,12 +34,10 @@ const createClient = async (
     console.log('createClient', createClient);
 
     user.clientData = createClient[0]._id;
-    // user.clientData = createClient[3].email;
-
-    console.log('user', user);
+    user.email = createClient[0].email;
 
     const newUser = await User.create([user], { session });
-    console.log('newUser', newUser);
+
     if (!newUser.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "can't create user");
     }
@@ -58,7 +56,7 @@ const createClient = async (
       'clientData',
     );
   }
-  console.log('newUserAllData', newUserAllData);
+
   return newUserAllData;
 };
 

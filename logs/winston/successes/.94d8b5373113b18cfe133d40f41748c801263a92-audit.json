@@ -64,6 +64,16 @@
             "date": 1696259302593,
             "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-21-success.log",
             "hash": "29fc1d99e7f21fdbeef2d3beeb8662d1d14f90467242c8bf59fb92fb3d9803e8"
+        },
+        {
+            "date": 1696264661901,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-22-success.log",
+            "hash": "fafa3c130d91244ad393d430320fed8ccdd52916a672d9245da94cd3a3314ad0"
+        },
+        {
+            "date": 1696266040125,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-23-success.log",
+            "hash": "989835e96859ce6de19599358ff74da2c3aac20502af6443379545e75a71b541"
         }
     ],
     "hashType": "sha256"
