@@ -26,7 +26,7 @@ export const clientSchema = new Schema<IClientInfo>(
     },
     email: {
       type: String,
-      // required: true,
+      required: true,
       unique: true,
     },
     // role: {
@@ -50,6 +50,10 @@ export const clientSchema = new Schema<IClientInfo>(
     },
     owner: {
       type: String,
+    },
+    coachId: {
+      type: String,
+      required: true,
     },
   },
   {

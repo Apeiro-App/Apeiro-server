@@ -41,6 +41,9 @@ const clientZodSchema = z.object({
       clientData: z.string({
         required_error: 'Client ID is required',
       }),
+      coachId: z.string({
+        required_error: 'Coach id is required',
+      }),
     }),
   }),
 });
