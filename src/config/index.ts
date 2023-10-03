@@ -8,6 +8,8 @@ export default {
   port: process.env.PORT,
   database_url: process.env.DB_LOCAL,
   default_user_password: process.env.USER_DEFAULT_PASS,
+  default_coach_password: process.env.COACH_DEFAULT_PASS,
+  default_admin_password: process.env.ADMIN_DEFAULT_PASS,
   bycrypt_salt_round: process.env.BCRYPT_SALT_ROUND,
   jwt_secret: process.env.JWT_SECRET,
   jwt_expires_in: process.env.JWT_EXPIRES_IN,

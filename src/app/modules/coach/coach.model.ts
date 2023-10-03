@@ -21,6 +21,11 @@ const coachSchema = new Schema<ICoachInfo>(
       type: Boolean,
       required: true,
     },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     number: {
       type: Number,
       required: true,
@@ -48,4 +53,4 @@ const coachSchema = new Schema<ICoachInfo>(
 );
 
 // Create the Coach model
-const Coach = model<ICoachInfo>('Coach', coachSchema);
+export const Coach = model<ICoachInfo>('Coach', coachSchema);

@@ -1,20 +1,56 @@
-import { Model } from 'mongoose';
+import { Schema, model } from 'mongoose';
+import { IAdminInfo } from './admin.interface';
 
-export type Name = {
-  clientFirstName: string;
-  clientLastName: string;
-};
+const coachSchema = new Schema<IAdminInfo>(
+  {
+    name: {
+      adminFirstName: {
+        type: String,
+        required: true,
+      },
+      adminLastName: {
+        type: String,
+        required: true,
+      },
+    },
+    coachId: {
+      type: String,
+      required: true,
+    },
+    isVerified: {
+      type: Boolean,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    number: {
+      type: Number,
+      required: true,
+    },
+    birthDate: {
+      type: String,
+      required: true,
+    },
+    gender: {
+      type: String,
+      enum: ['male', 'female'],
+      required: true,
+    },
+    owner: {
+      type: String,
+    },
+    role: {
+      type: String,
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  },
+);
 
-export type IAdminInfo = {
-  name: Name;
-  adminId: string;
-  coachId: string;
-  isVerified: boolean;
-  number: number;
-  birthDate: string;
-  gender: 'male' | 'female';
-  owner?: string;
-  role: string;
-};
-
-export type AdminModel = Model<IAdminInfo, Record<string, unknown>>;
+// Create the Admin model
+export const Admin = model<IAdminInfo>('Admin', coachSchema);
