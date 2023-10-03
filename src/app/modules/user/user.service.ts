@@ -31,7 +31,7 @@ const createClient = async (
     if (!createClient.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "Can't create client");
     }
-    console.log('createClient', createClient);
+    // console.log('createClient', createClient);
 
     user.clientData = createClient[0]._id;
     user.email = createClient[0].email;
