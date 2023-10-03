@@ -1,10 +1,11 @@
 import jwt, { JwtPayload, Secret } from 'jsonwebtoken';
+
 // import config from '../config';
 
 const createToken = (
-  payload: object,
+  payload: Record<string, unknown>,
   secret: Secret,
-  option: object,
+  option: Record<string, unknown>,
 ): string => {
   return jwt.sign(payload, secret, option);
 };

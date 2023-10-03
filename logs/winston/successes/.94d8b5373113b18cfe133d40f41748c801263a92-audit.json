@@ -1,80 +1,90 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\.94d8b5373113b18cfe133d40f41748c801263a92-audit.json",
-  "files": [
-    {
-      "date": 1695122546988,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-17-success.log",
-      "hash": "083ecbd34b0ad0830d21429e41bef319d42f3e1691df2aef19634113ddebf85e"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1695124845650,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-18-success.log",
-      "hash": "0e82146dd6a6a66940e994da6dd2a8b8ce2b851241e408989de63bbc0bace45b"
-    },
-    {
-      "date": 1695132317433,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-20-success.log",
-      "hash": "6afc5c0ab2d4ffb5d13900066606eb0c3f9402197b2e098d6e865a93aadc167e"
-    },
-    {
-      "date": 1696099225658,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-01-00-success.log",
-      "hash": "11b666781536bdbfdfdc97dee6af17be504e63da6e9141018d8a0483c43345c7"
-    },
-    {
-      "date": 1696100589169,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-01-01-success.log",
-      "hash": "1e56d51c0f1ce8d9b780ba476603eeca16038e3ee58b83aebaa4181f88682118"
-    },
-    {
-      "date": 1696183744835,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-00-success.log",
-      "hash": "28eb44b4a74ed8d0c7feba5ed507b8b6707eb96e10b0cc1cae996a12c26fbe7d"
-    },
-    {
-      "date": 1696187053590,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-01-success.log",
-      "hash": "e9eaa7013069c74f70b4bda49193cea8834b60f4934262b9144469244af175d1"
-    },
-    {
-      "date": 1696227571287,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-12-success.log",
-      "hash": "747aa399eb4124630198ac668afcda5150827838daa42e82125ee619ca27b734"
-    },
-    {
-      "date": 1696234270872,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-14-success.log",
-      "hash": "e4568e4c72ef87af915b9c6e7a365dd1c9b466b2ac5a07d8c13152c651eb7dec"
-    },
-    {
-      "date": 1696240047888,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-15-success.log",
-      "hash": "dc272751160d29c6816395fee3108b7143e2c1afd125eb50af253387e012020e"
-    },
-    {
-      "date": 1696241148903,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-16-success.log",
-      "hash": "3171420622b4878d3ecdb97aba647b0ef144beedf809ffe99e6753fc3d046885"
-    },
-    {
-      "date": 1696259302593,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-21-success.log",
-      "hash": "29fc1d99e7f21fdbeef2d3beeb8662d1d14f90467242c8bf59fb92fb3d9803e8"
-    },
-    {
-      "date": 1696264661901,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-22-success.log",
-      "hash": "fafa3c130d91244ad393d430320fed8ccdd52916a672d9245da94cd3a3314ad0"
-    },
-    {
-      "date": 1696266040125,
-      "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-23-success.log",
-      "hash": "989835e96859ce6de19599358ff74da2c3aac20502af6443379545e75a71b541"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\.94d8b5373113b18cfe133d40f41748c801263a92-audit.json",
+    "files": [
+        {
+            "date": 1695122546988,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-17-success.log",
+            "hash": "083ecbd34b0ad0830d21429e41bef319d42f3e1691df2aef19634113ddebf85e"
+        },
+        {
+            "date": 1695124845650,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-18-success.log",
+            "hash": "0e82146dd6a6a66940e994da6dd2a8b8ce2b851241e408989de63bbc0bace45b"
+        },
+        {
+            "date": 1695132317433,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-09-19-20-success.log",
+            "hash": "6afc5c0ab2d4ffb5d13900066606eb0c3f9402197b2e098d6e865a93aadc167e"
+        },
+        {
+            "date": 1696099225658,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-01-00-success.log",
+            "hash": "11b666781536bdbfdfdc97dee6af17be504e63da6e9141018d8a0483c43345c7"
+        },
+        {
+            "date": 1696100589169,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-01-01-success.log",
+            "hash": "1e56d51c0f1ce8d9b780ba476603eeca16038e3ee58b83aebaa4181f88682118"
+        },
+        {
+            "date": 1696183744835,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-00-success.log",
+            "hash": "28eb44b4a74ed8d0c7feba5ed507b8b6707eb96e10b0cc1cae996a12c26fbe7d"
+        },
+        {
+            "date": 1696187053590,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-01-success.log",
+            "hash": "e9eaa7013069c74f70b4bda49193cea8834b60f4934262b9144469244af175d1"
+        },
+        {
+            "date": 1696227571287,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-12-success.log",
+            "hash": "747aa399eb4124630198ac668afcda5150827838daa42e82125ee619ca27b734"
+        },
+        {
+            "date": 1696234270872,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-14-success.log",
+            "hash": "e4568e4c72ef87af915b9c6e7a365dd1c9b466b2ac5a07d8c13152c651eb7dec"
+        },
+        {
+            "date": 1696240047888,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-15-success.log",
+            "hash": "dc272751160d29c6816395fee3108b7143e2c1afd125eb50af253387e012020e"
+        },
+        {
+            "date": 1696241148903,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-16-success.log",
+            "hash": "3171420622b4878d3ecdb97aba647b0ef144beedf809ffe99e6753fc3d046885"
+        },
+        {
+            "date": 1696259302593,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-21-success.log",
+            "hash": "29fc1d99e7f21fdbeef2d3beeb8662d1d14f90467242c8bf59fb92fb3d9803e8"
+        },
+        {
+            "date": 1696264661901,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-22-success.log",
+            "hash": "fafa3c130d91244ad393d430320fed8ccdd52916a672d9245da94cd3a3314ad0"
+        },
+        {
+            "date": 1696266040125,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-02-23-success.log",
+            "hash": "989835e96859ce6de19599358ff74da2c3aac20502af6443379545e75a71b541"
+        },
+        {
+            "date": 1696313323799,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-03-12-success.log",
+            "hash": "e018be1937d4c46bcd4c163ce41b413f18293528c9bc7b71218d75fb183da3e3"
+        },
+        {
+            "date": 1696316409708,
+            "name": "C:\\projects\\gym-management-server\\logs\\winston\\successes\\Gym-2023-10-03-13-success.log",
+            "hash": "25b25d9d0f341b7aad37e8ec171f363071fc4afc8e6319921d11194e9dd0f35a"
+        }
+    ],
+    "hashType": "sha256"
 }

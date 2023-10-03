@@ -37,6 +37,7 @@ const createClient = async (
     user.email = createClient[0].email;
 
     const newUser = await User.create([user], { session });
+    // console.log('newUser', newUser);
 
     if (!newUser.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "can't create user");
