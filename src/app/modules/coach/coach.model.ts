@@ -48,4 +48,4 @@ const coachSchema = new Schema<ICoachInfo>(
 );
 
 // Create the Coach model
-const Coach = model<ICoachInfo>('Coach', coachSchema);
+export const Coach = model<ICoachInfo>('Coach', coachSchema);

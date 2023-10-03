@@ -11,6 +11,7 @@ export type ICoachInfo = {
   coachId: string;
   isVerified: boolean;
   number: number;
+  email: string;
   birthDate: string;
   gender: 'male' | 'female';
   owner?: string;

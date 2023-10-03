@@ -10,6 +10,7 @@ export type IAdminInfo = {
   adminId: string;
   coachId: string;
   isVerified: boolean;
+  email: string;
   number: number;
   birthDate: string;
   gender: 'male' | 'female';
