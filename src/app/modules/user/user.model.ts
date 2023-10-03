@@ -15,7 +15,7 @@ const userSchema = new Schema<IUser>({
   },
   isPasswordChange: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   role: {
     type: String,

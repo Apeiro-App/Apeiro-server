@@ -3,6 +3,7 @@ import catchAsync from '../../../shared/catchAsync';
 import { responseForData } from '../../../shared/sendResponse';
 import httpStatus from 'http-status';
 import { authService } from './auth.service';
+import { ILoginUserResponse } from './auth.interface';
 
 // login a user
 const loginUser = catchAsync(async (req: Request, res: Response) => {
@@ -10,7 +11,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   //   console.log(loginData);
   const result = await authService.loginUser(loginData);
 
-  responseForData.sendResponseForCreate(res, {
+  responseForData.sendResponseForCreate<ILoginUserResponse>(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'login Successful',
