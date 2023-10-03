@@ -2,10 +2,12 @@ import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import httpStatus from 'http-status';
 const app: Application = express();
+import cookieParser from 'cookie-parser';
 
 app.use(cors());
 
 //parser
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

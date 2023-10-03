@@ -1,7 +1,11 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
-import { ILoginUser, ILoginUserResponse } from './auth.interface';
+import {
+  ILoginUser,
+  ILoginUserResponse,
+  IRefreshTokenResponse,
+} from './auth.interface';
 import bcrypt from 'bcrypt';
 import { jwtToken } from '../../../shared/jwtToken';
 import config from '../../../config';
@@ -55,6 +59,49 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   };
 };
 
+// refresh token
+const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
+  // verfiy token
+  console.log('token', token);
+  let verifyToken = null;
+  try {
+    verifyToken = await jwtToken.verifyToken(
+      token,
+      config.jwt_refresh_token as Secret,
+    );
+
+    console.log('verifyToken', verifyToken);
+  } catch (error) {
+    throw new ApiError(httpStatus.FORBIDDEN, 'Invalid token');
+  }
+  // console.log(verifyToken);
+
+  // checking deleted user refresh token
+  const userEmail = verifyToken?.userEmail;
+  // console.log('userId', userId);
+  const isUserExist = await User.findOne({ email: userEmail });
+  // console.log('isUserExist', isUserExist);
+
+  if (!isUserExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, "User doesn't exist");
+  }
+
+  // generate new token
+  const newAccessToken = await jwtToken.createToken(
+    {
+      email: isUserExist.email,
+      role: isUserExist.role,
+    },
+    config.jwt_secret as Secret,
+    { expiresIn: config.jwt_expires_in },
+  );
+
+  return {
+    accessToken: newAccessToken,
+  };
+};
+
 export const authService = {
   loginUser,
+  refreshToken,
 };

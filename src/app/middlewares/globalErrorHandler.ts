@@ -37,6 +37,7 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   // checking zod error
   else if (error instanceof ZodError) {
+    console.log('ZodError', error);
     const simplifiedError = handleZodError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
