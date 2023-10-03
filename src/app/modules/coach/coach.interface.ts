@@ -8,7 +8,7 @@ export type Name = {
 export type ICoachInfo = {
   name: Name;
   adminId: string;
-  coachId: string;
+  // coachId: string;
   isVerified: boolean;
   number: number;
   email: string;

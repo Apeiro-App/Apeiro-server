@@ -8,7 +8,8 @@ import mongoose from 'mongoose';
 import { Client } from '../client/client.model';
 import { ICoachInfo } from '../coach/coach.interface';
 import { Coach } from '../coach/coach.model';
-import { IAdminInfo } from '../admin/admin.mode';
+import { IAdminInfo } from '../admin/admin.interface';
+import { Admin } from '../admin/admin.mode';
 
 // create a client
 const createClient = async (
@@ -74,9 +75,10 @@ const createCoach = async (
   }
 
   user.role = 'coach';
+  coach.role = 'coach';
 
-  let newUserAllData = null;
   const session = await mongoose.startSession();
+  let newUserAllData = null;
 
   try {
     session.startTransaction();
@@ -84,6 +86,7 @@ const createCoach = async (
     const newCreatedCoach = await Coach.create([coach], {
       session,
     });
+
     if (!newCreatedCoach.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, "Can't create Coach");
     }
@@ -117,7 +120,6 @@ const createCoach = async (
 };
 
 // create admin
-
 const createAdmin = async (
   user: IUser,
   admin: IAdminInfo,
@@ -127,6 +129,7 @@ const createAdmin = async (
   }
 
   user.role = 'admin';
+  admin.role = 'admin';
 
   let newUserAllData = null;
   const session = await mongoose.startSession();
@@ -134,7 +137,7 @@ const createAdmin = async (
   try {
     session.startTransaction();
 
-    const newCreatedAdmin = await Coach.create([admin], {
+    const newCreatedAdmin = await Admin.create([admin], {
       session,
     });
     if (!newCreatedAdmin.length) {

@@ -11,4 +11,16 @@ router.post(
   userController.createClient,
 );
 
+router.post(
+  '/create-coach',
+  validateRequest(userValidation.coachZodSchema),
+  userController.createCoach,
+);
+
+router.post(
+  '/create-admin',
+  validateRequest(userValidation.adminZodSchema),
+  userController.createAdmin,
+);
+
 export const userRoute = router;

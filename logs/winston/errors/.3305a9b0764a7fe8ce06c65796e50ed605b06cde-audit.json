@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Apeiro\\Apeiro-server\\logs\\winston\\errors\\.3305a9b0764a7fe8ce06c65796e50ed605b06cde-audit.json",
+    "files": [
+        {
+            "date": 1696354256228,
+            "name": "D:\\Apeiro\\Apeiro-server\\logs\\winston\\errors\\Gym-2023-10-03-23-error.log",
+            "hash": "7c5fc2db74a785e4f1562a7170e0d0dbd2804ec1f858ea79333f47493abed19d"
+        },
+        {
+            "date": 1696356024318,
+            "name": "D:\\Apeiro\\Apeiro-server\\logs\\winston\\errors\\Gym-2023-10-04-00-error.log",
+            "hash": "f0c1a220ae1a50f022c37a09553f579c05cc0c9e7379b2f80326fb8688968909"
+        }
+    ],
+    "hashType": "sha256"
+}
