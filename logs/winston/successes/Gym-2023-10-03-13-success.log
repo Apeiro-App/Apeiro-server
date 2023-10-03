@@ -82,3 +82,63 @@
   label: 'Gym Management',
   timestamp: '2023-10-03T07:08:43.631Z'
 }
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:08:47.870Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:08:47.888Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:14.433Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:14.451Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:25.809Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:25.832Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:34.188Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:34.219Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:47.269Z'
+}
+{
+  message: 'app is listening in the 5000',
+  level: 'info',
+  label: 'Gym Management',
+  timestamp: '2023-10-03T07:21:47.291Z'
+}
