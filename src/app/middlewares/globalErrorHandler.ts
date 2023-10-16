@@ -13,7 +13,7 @@ import ApiError from '../../errors/ApiError';
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   config.env === 'development'
     ? console.log('global error handler', error)
-    : errorLogger.error('global error handler', error);
+    : console.log('global error handler', error);
 
   let statusCode = 500;
   let message = 'Something went Wrong';
