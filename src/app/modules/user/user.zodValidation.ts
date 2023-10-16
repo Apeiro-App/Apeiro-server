@@ -49,6 +49,7 @@ const clientZodSchema = z.object({
 });
 // console.log('createUserZodValidation', createUserZodValidation)
 
+// coach zod schema
 const coachZodSchema = z.object({
   body: z.object({
     coach: z.object({
@@ -86,6 +87,7 @@ const coachZodSchema = z.object({
   }),
 });
 
+// admin zod schema
 const adminZodSchema = z.object({
   body: z.object({
     admin: z.object({
