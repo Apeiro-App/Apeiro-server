@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Apeiro\\Apeiro-server\\logs\\winston\\successes\\.6c5997a4ff4135a3e23ca8f7d1659e98d324e9c1-audit.json",
+    "files": [
+        {
+            "date": 1696438333549,
+            "name": "D:\\Apeiro\\Apeiro-server\\logs\\winston\\successes\\Gym-2023-10-04-22-success.log",
+            "hash": "cf887ac70587acdc3d3893fa869ef60116a19ed83a8b2330fc0e0864193e7d08"
+        }
+    ],
+    "hashType": "sha256"
+}

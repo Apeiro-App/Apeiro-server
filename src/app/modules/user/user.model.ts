@@ -24,7 +24,17 @@ const userSchema = new Schema<IUser>({
   clientData: {
     type: Schema.Types.ObjectId,
     ref: 'Client',
-    required: true,
+    required: false,
+  },
+  coachData: {
+    type: Schema.Types.ObjectId,
+    ref: 'Coach',
+    required: false,
+  },
+  adminData: {
+    type: Schema.Types.ObjectId,
+    ref: 'Admin',
+    required: false,
   },
 });
 
