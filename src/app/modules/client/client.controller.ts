@@ -9,8 +9,13 @@ import { IClientInfo } from './client.interface';
 // get all client under coach
 const getAllClientUnderCoach = catchAsync(
   async (req: Request, res: Response) => {
-    // const filters = pick(req.query, ['position', 'email', 'status']);
-    // console.log(filters);
+    const filters = pick(req.query, [
+      'searchTerm',
+      'status',
+      'position',
+      'email',
+    ]);
+    console.log(filters);
     const paginationOption = pick(req.query, [
       'limit',
       'page',
@@ -18,13 +23,14 @@ const getAllClientUnderCoach = catchAsync(
       'sortOrder',
     ]);
     console.log(paginationOption);
-    // const id = req.params.coachId;
+    const id = req.params.coachId;
     // console.log(id);
     const result = await clientService.getAllClientUnderCoach(
-      // id,
+      id,
       paginationOption,
-      // filters,
+      filters,
     );
+    console.log('result', result);
 
     responseForData.sendResponse<IClientInfo[]>(res, {
       statusCode: httpStatus.OK,
