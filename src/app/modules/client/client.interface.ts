@@ -20,3 +20,7 @@ export type IClientInfo = {
 };
 
 export type ClientModel = Model<IClientInfo, Record<string, unknown>>;
+
+export type IClientFilters = {
+  searchTerm?: string;
+};
