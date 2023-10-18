@@ -2115,6 +2115,11 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+rype@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/rype/-/rype-1.2.6.tgz#b4e51c67e071e33f43f68a49b0320d12987e4a4d"
+  integrity sha512-Dw4rW35xQhNndOb3GklPckzi9Fy0T0uPIl4SNoEqDfl3bfshFeYyvBmoB/HJ0iEONDe2hD7PBQtT25CmJnsS+g==
+
 safe-buffer@5.2.1, safe-buffer@^5.0.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
