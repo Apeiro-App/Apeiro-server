@@ -1,13 +1,14 @@
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOption } from '../../../interfaces/pagination';
 import querySchema from '../../../shared/types';
-import { IClientInfo } from './client.interface';
+import { IClientFilters, IClientInfo } from './client.interface';
 import { Client } from './client.model';
 import { InferOutput } from 'rype';
 
 const getAllClientUnderCoach = async (
   id: string,
   filters: InferOutput<typeof querySchema>,
+  // filters: IClientFilters,
   paginationOption: IPaginationOption,
 ): Promise<IGenericResponse<IClientInfo[]>> => {
   const { page = 1, limit = 10 } = paginationOption;
@@ -47,4 +48,3 @@ const getAllClientUnderCoach = async (
 export const clientService = {
   getAllClientUnderCoach,
 };
-// $and: [{ coachId: id }, { whereConditions }],

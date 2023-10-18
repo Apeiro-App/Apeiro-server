@@ -23,4 +23,7 @@ export type ClientModel = Model<IClientInfo, Record<string, unknown>>;
 
 export type IClientFilters = {
   searchTerm?: string;
+  status?: string;
+  position?: string;
+  email?: string;
 };
